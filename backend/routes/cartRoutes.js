@@ -6,7 +6,7 @@ import { isAuth } from '../utils.js';
 const cartRouter = express.Router();
 
 cartRouter.post(
-    "/cart",
+    "/",
     isAuth,
     async (req, res) => {
     const { userId, productId, quantity, name, price } = req.body;
